@@ -1,13 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include 'links/links.php'; ?>
-    <?php include 'styles/styles.php';?>
+    <!--<?php include 'links/links.php'; ?>
+    <?php include 'styles/styles.php';?> 
+-->
+
+<link rel="stylesheet" type="text/css" href="links/link.html">
+<link rel="stylesheet" type="text/css" href="styles.styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166017572-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-166017572-1');
+</script>
+
+
+    
+    <style>
+        
+
+*{margin:0; padding: 0; box-sizing: border-box;}
+
+html {
+  scroll-behavior: smooth;
+}
+.main-header
+{
+    height: 450px;
+    width: 100%; 
+}
+#nav{
+background-color:rgba(192,192,192,.2)!important;
+}
+.corona-ani img {
+    animation: rotation 3s linear infinite;
+}
+
+@keyframes rotation{
+    0% { transform : rotate(0); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.leftside img{animation : animate 5s linear infinite;}
+@keyframes animate{
+    0%{transform : scale(.75);}
+    20%{transform:scale(1);}
+    40%{transform:scale(.75);}
+    60%{transform:scale(1);}
+    80%{transform:scale(.75);}
+    100%{transform:scale(1);}
+}
+
+.corona-updates{
+    
+}
+
+.section{
+    background-color:rgba(192,192,192,.2);
+}
+
+#sym
+{
+    color: red;
+
+    border:.5px .5px .5px .5px;
+    border-color: black;
+    border-style: solid;
+}
+
+
+
+    </style>
+
 </head>
 <body onload="fetch()">
 
 <!-- navbar section -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="nav">
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-3 navbar-fixed-top navbar-default" id="nav">
   <a class="navbar-brand pl-5" href="#">COVID-19</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -16,7 +103,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto pr-5">
       <li class="nav-item active">
-        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#home">Home </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#about">About</a>
@@ -27,10 +114,10 @@
       <li class="nav-item">
         <a class="nav-link" href="#prevention">Prevention</a>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="#">Contact</a>
       </li>
-      
+       -->
     
     </ul>
     
@@ -263,6 +350,81 @@
     
 </div>
 <br><br>
+
+<footer>
+    <div class="container-fluid pt-5 pb-5 section">
+
+        <div class="row">
+            <h1 class="text-center pl-2">Help Us to Fight Against COVID-19 </h1><hr>
+            <div class="col-lg-12 col-md-12-col-sm-12 ">
+                <h3><b>Donate Us</b></h3>
+                <h4 class="pl-3">You can donate us by using any of these modes</h4>
+                    <ul class="pl-3">
+                        <li>
+                            Net Banking
+                        </li>
+                        <li>
+                            Card Payments
+                        </li>
+                        <li>
+                            Other Modes
+                        </li>
+                    </ul>
+                    <p> *All contributions towards the PM CARES Fund are 100% exempted from Income Tax under Section 80(G) of the Income Tax Act, 1961.</p>
+                <table class="table table-reponsive table-striped" >
+                    <thead>
+                        <tr>
+                          <th scope="col">Sl no.</th>
+                          <th scope="col">Bank</th>
+                          <th scope="col"> Branch </th>
+                          <th scope="col">Account No./ IFSC</th>
+                          
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>State Bank of India</td>
+                          <td>New Delhi Main Branch, No.11, Parliament Street, New Delhi-110001</td>
+                          <td>Savings Bank A/C No. 39238765008 IFSC Code: SBIN0000691</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Central Bank of India</td>
+                          <td>66, Janpath, New Delhi</td>
+                          <td>Savings Bank A/C No. 3809123014 IFSC: CBIN0280318</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Indian Overseas Bank</td>
+                          <td>Parliament Street, New Delhi</td>
+                          <td>Savings Bank A/c No. 076201003042020 IFSC: IOBA0000762</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td>  Axis Bank</td>
+                          <td>New Delhi Main Branch</td>
+                          <td>Savings Bank A/c No. 920010023235458 IFSC: UTIB0000007</td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">5</th>
+                          <td> HDFC Bank </td>
+                          <td>Vasant Vihar Branch, D 1&2, D Block Shopping Complex, Vasant Vihar, New Delhi.</td>
+                          <td>Savings Bank A/c No. 59194700000000 IFSC Code : HDFC0000011</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+        
+    </div>
+</footer>
+
+
+
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  <script>
      $(window).on("load", function () {
@@ -279,10 +441,7 @@
      })
  </script>
 
-<script>
-   
 
-</script>
 
 
 </body>
